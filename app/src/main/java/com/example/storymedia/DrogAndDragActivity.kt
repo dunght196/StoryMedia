@@ -18,8 +18,8 @@ class DrogAndDragActivity: AppCompatActivity(), View.OnTouchListener, View.OnDra
         setListeners()
     }
     private fun setListeners() {
-        tv_dropdrop.setOnTouchListener(this)
-        ll_pinklayout.setOnDragListener(this)
+//        tv_dropdrop.setOnTouchListener(MoveViewTouchListener(tv_dropdrop))
+//        ll_pinklayout.setOnDragListener(this)
     }
     override fun onDrag(view:View, dragEvent: DragEvent):Boolean {
         Log.d(TAG, "onDrag: view->$view\n DragEvent$dragEvent")
