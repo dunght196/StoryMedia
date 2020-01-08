@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 ConstraintSet.PARENT_ID,
                 ConstraintSet.RIGHT
             )
+            //cccccc
             // bbbbbbb
             constrainSet.connect(
                 textContent.id,
