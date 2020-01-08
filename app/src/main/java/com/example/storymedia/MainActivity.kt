@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 ConstraintSet.PARENT_ID,
                 ConstraintSet.RIGHT
             )
+            // bbbbbbb
             constrainSet.connect(
                 textContent.id,
                 ConstraintSet.LEFT,
@@ -75,8 +76,10 @@ class MainActivity : AppCompatActivity() {
 
             textContent.setOnTouchListener(MoveViewTouchListener(
                 textContent,
-                listener = { isMove ->
+                iv_delete,
+                listener = { isMove, isBoundView ->
                     iv_delete.isVisible = isMove
+                    if(isBoundView) constrainLayout.removeView(textContent)
                 }
             ))
         }
